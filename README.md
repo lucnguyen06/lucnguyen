@@ -184,15 +184,19 @@ void tinhtoanphanso() {
     printf("moi ban nhap vao (mau so) thu nhat: ");scanf("%f",&b);
     printf("moi ban nhap vao (tu so) thu hai : ");scanf("%f",&c);
     printf("moi ban nhap vao (mau so) thu hai : ");scanf("%f",&d);
-    float tong,hieu,thuong,tich;
-    tong=((a*d)/(b*d))+((c*b)/(b*d));
-    printf("tong cua hai phan so la :%.2f\n",tong);
-    hieu=((a*d)/(b*d))-((c*b)/(b*d));
-    printf("hieu cua hai phan so la :%.2f\n",hieu);
-    tich=((a*c)/(b*d));
-    printf("tich cua 2 phan so la  : %.2f\n",tich);
-    thuong=(a*d)/(c*b);
-    printf("thuong cua 2 phan so la :%.2f\n",thuong);
+    int tongt,tongm,hieut,hieum,thuongt,thuongm,ticht,tichm;
+    tongt=(a*d)+(c*b);
+    tongm=b*d;
+    printf("tong cua hai phan so la :%d/%d\n",tongt,tongm);
+    hieut=(a*d)-(c*b);
+    hieum=b*d; 
+    printf("hieu cua hai phan so la : %d/%d\n",hieut,hieum);
+    ticht=a*c;
+    tichm= b*d; 
+    printf("tich cua 2 phan so la  : %d/%d\n",ticht,tichm);
+    thuongt=a*d;
+    thuongm=b*c; 
+    printf("thuong cua 2 phan so la :%d/%d\n",thuongt,thuongm);
 }
 int main() {
     tieptuc:
